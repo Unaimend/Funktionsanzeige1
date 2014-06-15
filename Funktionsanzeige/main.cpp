@@ -18,15 +18,20 @@
 #include <SFML/Graphics.hpp>
 
 #include "CalculateFxValues.hpp"
-
+#include "/Users/Thomas/Desktop/Funktionsanzeige/Funktionsanzeige/CalculateFirstDerivative.h"
 
 int main(int, char const**)
 {   double x = 0;
     int counter = 20;
+    float deltax = 0.1;
     CalculateFxValues fx1;
+    CalculateFirstDerivative fx2;
     
     fx1.setcalculateValues(x, counter);
     fx1.getcalculateValues();
+    
+    fx2.setcalculateValues(x, deltax, counter);
+    fx2.getcalculateValues();
     
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");

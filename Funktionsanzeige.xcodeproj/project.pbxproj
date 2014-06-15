@@ -16,7 +16,7 @@
 		E9DDDD12194DD40200DC4522 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */; };
 		E9DDDD13194DD40200DC4522 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */; };
 		E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */; };
-		E9DDDD20194DE78200DC4522 /* CalculateFirstDerivat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */; };
+		E9DDDD23194DE86700DC4522 /* CalculateFirstDerivative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		E9DDDD1B194DD86C00DC4522 /* CalculateFxValues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CalculateFxValues.hpp; sourceTree = "<group>"; };
 		E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFxValues.cpp; sourceTree = "<group>"; };
-		E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFirstDerivat.cpp; sourceTree = "<group>"; };
-		E9DDDD1F194DE78200DC4522 /* CalculateFirstDerivat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateFirstDerivat.h; sourceTree = "<group>"; };
+		E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFirstDerivative.cpp; sourceTree = "<group>"; };
+		E9DDDD27194DEFCC00DC4522 /* CalculateFirstDerivative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateFirstDerivative.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		E9DDDCF2194DD3DF00DC4522 /* Funktionsanzeige */ = {
 			isa = PBXGroup;
 			children = (
-				E9DDDD15194DD59900DC4522 /* Quellcode */,
 				E9DDDD16194DD5A500DC4522 /* Headerdatein */,
+				E9DDDD15194DD59900DC4522 /* Quellcode */,
 				E9DDDCFA194DD3DF00DC4522 /* Resources */,
 				E9DDDCF3194DD3DF00DC4522 /* Supporting Files */,
 			);
@@ -107,7 +107,7 @@
 			children = (
 				E9DDDCF8194DD3DF00DC4522 /* main.cpp */,
 				E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */,
-				E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */,
+				E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */,
 			);
 			name = Quellcode;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		E9DDDD16194DD5A500DC4522 /* Headerdatein */ = {
 			isa = PBXGroup;
 			children = (
+				E9DDDD27194DEFCC00DC4522 /* CalculateFirstDerivative.h */,
 				E9DDDD1B194DD86C00DC4522 /* CalculateFxValues.hpp */,
-				E9DDDD1F194DE78200DC4522 /* CalculateFirstDerivat.h */,
 			);
 			name = Headerdatein;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9DDDD23194DE86700DC4522 /* CalculateFirstDerivative.cpp in Sources */,
 				E9DDDCF9194DD3DF00DC4522 /* main.cpp in Sources */,
 				E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */,
-				E9DDDD20194DE78200DC4522 /* CalculateFirstDerivat.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
