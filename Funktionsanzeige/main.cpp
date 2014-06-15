@@ -19,7 +19,7 @@
 
 #include "CalculateFxValues.hpp"
 #include "/Users/Thomas/Desktop/Funktionsanzeige/Funktionsanzeige/CalculateFirstDerivative.h"
-
+//Subklasse die beies zusammenfasst fehlt noch, also die von beiden erbt, von dieser Klasse werde ich wahrscheinlich auch das Übergen der Renderwerte Regeln lassen
 int main(int, char const**)
 {   double x = 0;
     int counter = 20;
@@ -27,7 +27,7 @@ int main(int, char const**)
     CalculateFxValues fx1;
     CalculateFirstDerivative fx2;
     
-    fx1.setcalculateValues(x, counter);
+    fx1.setcalculateValues(x, counter, deltax);
     fx1.getcalculateValues();
     
     fx2.setcalculateValues(x, deltax, counter);

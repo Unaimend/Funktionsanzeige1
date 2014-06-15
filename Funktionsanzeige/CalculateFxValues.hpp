@@ -12,7 +12,7 @@
 class CalculateFxValues
 {
 public:
-    void setcalculateValues(double x, int counter);
+    void setcalculateValues(double x, int counter, float deltax);
     void getcalculateValues();
     //--------Functions------
     CalculateFxValues();
@@ -25,6 +25,7 @@ protected:
     //--------Variables------
     double m_x;
     int m_counter;
+    float m_deltax;
     
     
 private:
