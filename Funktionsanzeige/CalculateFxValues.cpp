@@ -1,14 +1,7 @@
-
-//  CalculateFxValues.cpp
-//  Funktionsanzeige
-//
-//  Created by Thomas Dost on 15.06.14.
-//  Copyright (c) 2014 Thomas Dost. All rights reserved.
-//
-
-#include <stdio.h>
 #include <iostream>
+
 #include "CalculateFxValues.hpp"
+
 CalculateFxValues::CalculateFxValues()
 {
     m_x = 0;
@@ -26,20 +19,7 @@ CalculateFxValues::~CalculateFxValues()
 
 
 
-void CalculateFxValues::setcalculateValues(double x, int counter, float deltax)
-{
-    m_counter = counter;
-    m_x =x;
-    m_deltax = deltax;
-    //CalculateFxValues::calculateValues();
-}
-
-
-
-
 void CalculateFxValues::getcalculateValues() { CalculateFxValues::calculateValues(); }
-
-
 
 
 

@@ -17,6 +17,7 @@
 		E9DDDD13194DD40200DC4522 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */; };
 		E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */; };
 		E9DDDD23194DE86700DC4522 /* CalculateFirstDerivative.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */; };
+		E9DDDD30194E141B00DC4522 /* CalculateValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFxValues.cpp; sourceTree = "<group>"; };
 		E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFirstDerivative.cpp; sourceTree = "<group>"; };
 		E9DDDD27194DEFCC00DC4522 /* CalculateFirstDerivative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateFirstDerivative.h; sourceTree = "<group>"; };
+		E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateValues.cpp; sourceTree = "<group>"; };
+		E9DDDD2F194E141B00DC4522 /* CalculateValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateValues.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				E9DDDCF8194DD3DF00DC4522 /* main.cpp */,
-				E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */,
+				E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */,
 				E9DDDD21194DE86700DC4522 /* CalculateFirstDerivative.cpp */,
+				E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */,
 			);
 			name = Quellcode;
 			sourceTree = "<group>";
@@ -115,6 +119,7 @@
 		E9DDDD16194DD5A500DC4522 /* Headerdatein */ = {
 			isa = PBXGroup;
 			children = (
+				E9DDDD2F194E141B00DC4522 /* CalculateValues.h */,
 				E9DDDD27194DEFCC00DC4522 /* CalculateFirstDerivative.h */,
 				E9DDDD1B194DD86C00DC4522 /* CalculateFxValues.hpp */,
 			);
@@ -202,6 +207,7 @@
 			files = (
 				E9DDDD23194DE86700DC4522 /* CalculateFirstDerivative.cpp in Sources */,
 				E9DDDCF9194DD3DF00DC4522 /* main.cpp in Sources */,
+				E9DDDD30194E141B00DC4522 /* CalculateValues.cpp in Sources */,
 				E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
