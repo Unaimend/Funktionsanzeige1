@@ -17,10 +17,17 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 
+#include "CalculateFxValues.hpp"
 
 
 int main(int, char const**)
-{
+{   double x = 0;
+    int counter = 20;
+    CalculateFxValues fx1;
+    
+    fx1.setcalculateValues(x, counter);
+    fx1.getcalculateValues();
+    
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML window");
     while (window.isOpen())

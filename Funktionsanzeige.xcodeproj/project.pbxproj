@@ -15,6 +15,8 @@
 		E9DDDD11194DD40200DC4522 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0B194DD40200DC4522 /* sfml-network.framework */; };
 		E9DDDD12194DD40200DC4522 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */; };
 		E9DDDD13194DD40200DC4522 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */; };
+		E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */; };
+		E9DDDD20194DE78200DC4522 /* CalculateFirstDerivat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,10 @@
 		E9DDDD0B194DD40200DC4522 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
 		E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
 		E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		E9DDDD1B194DD86C00DC4522 /* CalculateFxValues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CalculateFxValues.hpp; sourceTree = "<group>"; };
+		E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFxValues.cpp; sourceTree = "<group>"; };
+		E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateFirstDerivat.cpp; sourceTree = "<group>"; };
+		E9DDDD1F194DE78200DC4522 /* CalculateFirstDerivat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateFirstDerivat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +78,8 @@
 		E9DDDCF2194DD3DF00DC4522 /* Funktionsanzeige */ = {
 			isa = PBXGroup;
 			children = (
-				E9DDDCF8194DD3DF00DC4522 /* main.cpp */,
+				E9DDDD15194DD59900DC4522 /* Quellcode */,
+				E9DDDD16194DD5A500DC4522 /* Headerdatein */,
 				E9DDDCFA194DD3DF00DC4522 /* Resources */,
 				E9DDDCF3194DD3DF00DC4522 /* Supporting Files */,
 			);
@@ -93,6 +100,25 @@
 				E9DDDCFF194DD3DF00DC4522 /* sansation.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		E9DDDD15194DD59900DC4522 /* Quellcode */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDDCF8194DD3DF00DC4522 /* main.cpp */,
+				E9DDDD1C194DD89C00DC4522 /* CalculateFxValues.cpp */,
+				E9DDDD1E194DE78200DC4522 /* CalculateFirstDerivat.cpp */,
+			);
+			name = Quellcode;
+			sourceTree = "<group>";
+		};
+		E9DDDD16194DD5A500DC4522 /* Headerdatein */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDDD1B194DD86C00DC4522 /* CalculateFxValues.hpp */,
+				E9DDDD1F194DE78200DC4522 /* CalculateFirstDerivat.h */,
+			);
+			name = Headerdatein;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9DDDCF9194DD3DF00DC4522 /* main.cpp in Sources */,
+				E9DDDD1D194DD89C00DC4522 /* CalculateFxValues.cpp in Sources */,
+				E9DDDD20194DE78200DC4522 /* CalculateFirstDerivat.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +356,7 @@
 				E9DDDD07194DD3DF00DC4522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
