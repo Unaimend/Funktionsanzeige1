@@ -25,5 +25,8 @@ protected:
     double m_x;
     float m_deltax;
     int m_counter;
+private:
+    void calculateFirstDerivative();
+    void calculateFx();
 };
 #endif /* defined(__Funktionsanzeige__CalculateValues__) */

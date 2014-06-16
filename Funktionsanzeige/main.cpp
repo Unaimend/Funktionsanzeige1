@@ -3,8 +3,8 @@
 
 
 
-#include "CalculateFirstDerivative.h"
-#include "CalculateFxValues.hpp"
+
+#include "CalculateValues.h"
 //Subklasse die beies zusammenfasst fehlt noch, also die von beiden erbt, von dieser Klasse werde ich wahrscheinlich auch das Übergen der Renderwerte Regeln lassen
 int main(int, char const**)
 {
@@ -15,15 +15,8 @@ int main(int, char const**)
     CalculateValues fx1;
     fx1.setcalculateValues(x, deltax, counter);
     fx1.getcalculateValues();
-   
-    CalculateFxValues fx2;
-    fx2.setcalculateValues(x, deltax, counter);
-    fx2.getcalculateValues();
     
-    CalculateFirstDerivative fx3;
-    fx3.setcalculateValues(x, deltax, counter);
-    fx3.getcalculateValues();
-
+    
     return EXIT_SUCCESS;
 }
 
