@@ -1,11 +1,9 @@
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
-
-
-
 
 #include "CalculateValues.h"
+#include "Renderer.h"
+#include <string>
 //Subklasse die beies zusammenfasst fehlt noch, also die von beiden erbt, von dieser Klasse werde ich wahrscheinlich auch das Übergen der Renderwerte Regeln lassen
+
 int main(int, char const**)
 {
     double x = 0;
@@ -15,9 +13,10 @@ int main(int, char const**)
     CalculateValues fx1;
     fx1.setcalculateValues(x, deltax, counter);
     fx1.getcalculateValues();
-    
-    
-    return EXIT_SUCCESS;
+    Renderer Window;
+    Window.Render(fx1);
+    std::cin.get();
+    return 0;
 }
 
 

@@ -10,14 +10,22 @@
 #define __Funktionsanzeige__CalculateValues__
 
 #include <iostream>
-class CalculateValues
+#include <vector>
+
+#include "Renderer.h"
+
+class CalculateValues 
 {
+    
 public:
     //--------Functions------
     void setcalculateValues(double x, float deltax, int counter);
     void getcalculateValues();
     CalculateValues();
     //--------Variables------
+
+
+
 protected:
     //--------Functions------
     
@@ -25,8 +33,36 @@ protected:
     double m_x;
     float m_deltax;
     int m_counter;
+ 
+    std::vector<double> xvalues;
+    std::vector<double> fxvalues;
+    
+    std::vector<double> fxfirstderivativevalues;
+    std::vector<double> xfirstderivativevalues;
+
 private:
+    //--------Functions------
     void calculateFirstDerivative();
     void calculateFx();
+    //--------Variables------
+
+    
+    
+    
+};
+
+class Renderer : public CalculateValues
+{
+    
+    
+public:
+     void Render(CalculateValues &fx);
+    
+protected:
+    
+private:
+    
+    
+    
 };
 #endif /* defined(__Funktionsanzeige__CalculateValues__) */
