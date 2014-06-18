@@ -12,5 +12,6 @@
 void Renderer::Render(CalculateValues &fx)
 {
     CalculateValues fx1 = fx;
+    //dynamische speicherzuweisung mit button undso und benno anti vektor lösung damit ich mehrer funktionen gleichzeitig anzeigen lassen kann
 
 }

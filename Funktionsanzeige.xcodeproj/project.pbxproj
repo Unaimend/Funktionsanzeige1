@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E97E9369194F0CF1005757AB /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD08194DD40200DC4522 /* SFML.framework */; };
-		E97E936A194F0CF1005757AB /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD09194DD40200DC4522 /* sfml-window.framework */; };
-		E97E936B194F0CF1005757AB /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0A194DD40200DC4522 /* sfml-system.framework */; };
-		E97E936C194F0CF1005757AB /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0B194DD40200DC4522 /* sfml-network.framework */; };
-		E97E936D194F0CF1005757AB /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */; };
-		E97E936E194F0CF1005757AB /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */; };
 		E9DDDCF9194DD3DF00DC4522 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDCF8194DD3DF00DC4522 /* main.cpp */; };
 		E9DDDD00194DD3DF00DC4522 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9DDDCFF194DD3DF00DC4522 /* sansation.ttf */; };
 		E9DDDD30194E141B00DC4522 /* CalculateValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */; };
@@ -24,12 +18,6 @@
 		E9DDDCF4194DD3DF00DC4522 /* Funktionsanzeige-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Funktionsanzeige-Info.plist"; sourceTree = "<group>"; };
 		E9DDDCF8194DD3DF00DC4522 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E9DDDCFF194DD3DF00DC4522 /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
-		E9DDDD08194DD40200DC4522 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/SFML.framework"; sourceTree = "<group>"; };
-		E9DDDD09194DD40200DC4522 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
-		E9DDDD0A194DD40200DC4522 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
-		E9DDDD0B194DD40200DC4522 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
-		E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
-		E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../Downloads/SFML-2.1-osx-clang-universal/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalculateValues.cpp; sourceTree = "<group>"; };
 		E9DDDD2F194E141B00DC4522 /* CalculateValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculateValues.h; sourceTree = "<group>"; };
 		E9EEAC0B1950BB2A00D8D7AC /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
@@ -41,12 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E97E9369194F0CF1005757AB /* SFML.framework in Frameworks */,
-				E97E936A194F0CF1005757AB /* sfml-window.framework in Frameworks */,
-				E97E936B194F0CF1005757AB /* sfml-system.framework in Frameworks */,
-				E97E936C194F0CF1005757AB /* sfml-network.framework in Frameworks */,
-				E97E936D194F0CF1005757AB /* sfml-graphics.framework in Frameworks */,
-				E97E936E194F0CF1005757AB /* sfml-audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +38,6 @@
 		E9DDDCE6194DD3DF00DC4522 = {
 			isa = PBXGroup;
 			children = (
-				E9DDDD08194DD40200DC4522 /* SFML.framework */,
-				E9DDDD09194DD40200DC4522 /* sfml-window.framework */,
-				E9DDDD0A194DD40200DC4522 /* sfml-system.framework */,
-				E9DDDD0B194DD40200DC4522 /* sfml-network.framework */,
-				E9DDDD0C194DD40200DC4522 /* sfml-graphics.framework */,
-				E9DDDD0D194DD40200DC4522 /* sfml-audio.framework */,
 				E9DDDCF2194DD3DF00DC4522 /* Funktionsanzeige */,
 				E9DDDCF1194DD3DF00DC4522 /* Products */,
 			);

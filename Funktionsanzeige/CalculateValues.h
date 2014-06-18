@@ -22,6 +22,7 @@ public:
     void setcalculateValues(double x, float deltax, int counter);
     void getcalculateValues();
     CalculateValues();
+    ~CalculateValues();
     //--------Variables------
 
 

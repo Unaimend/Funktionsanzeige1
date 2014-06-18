@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"include"
+			],
+			[
+				"tex",
+				"text1"
+			],
+			[
+				"On",
+				"OnClick2"
+			],
+			[
+				"hash",
+				"hashlib"
+			],
+			[
+				"A",
+				"Anzahl"
+			],
+			[
+				"set",
+				"setMaxTagesumsatz"
+			],
+			[
+				"n",
+				"neues_limit"
+			],
+			[
+				"__",
+				"__MaxTagesumsatz"
+			],
+			[
+				"ma",
+				"maxTagesumsatz"
+			],
+			[
+				"K",
+				"kontostand2"
+			],
+			[
+				"kon",
+				"kontostand2"
+			],
+			[
+				"pri",
+				"print1"
+			],
+			[
+				"Kon",
+				"Kontostand"
+			],
+			[
+				"Mn",
+				"menuebar"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/C++/C++.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Thomas/Desktop/YOLO.cpp",
+		"/Users/Thomas/Desktop/Test.cpp",
+		"/Users/Thomas/Documents/Klassentest.py",
+		"/Users/Thomas/Documents/NewFrame.py",
+		"/Users/Thomas/Documents/wxTest.py",
+		"/Users/Thomas/Documents/Ohne Titel.hs",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/Button.py",
+		"/Users/Thomas/Desktop/spasten.cpp",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/schach.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/ColourSelect.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/About.py",
+		"/Users/Thomas/Documents/server.py",
+		"/Users/Thomas/Documents/import socket.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/Calendar.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/ColourDialog.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/Wizard.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/PDFViewer.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/MouseGestures.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/samples/hangman/hangman.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/PropertyGrid.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/TestTable.txt",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/viewer_basics.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/TextEntryDialog.py",
+		"/Users/Thomas/Downloads/Neuer Ordner/Samples/demo/images.py",
+		"/Volumes/NO NAME/WindowsFormsApplication7/WindowsFormsApplication7/Form1.cs",
+		"/Volumes/NO NAME/WindowsFormsApplication7/WindowsFormsApplication7/Program.cs",
+		"/Users/Thomas/Documents/Schule/DVT/LogicSim/LogicSim.jar",
+		"/Users/Thomas/Downloads/voce-0.9.1/samples/recognitionTest/java/run.bat",
+		"/Users/Thomas/Downloads/voce-0.9.1/samples/recognitionTest/c++/recognitionTest.vcproj",
+		"/Users/Thomas/Documents/Programmierern/Python/Test.py",
+		"/Users/Thomas/Documents/Programmierern/Python/Untitled2",
+		"/Users/Thomas/Desktop/Test/Test/main2.cpp",
+		"/Users/Thomas/Desktop/Test/Test/Funktionen.hpp",
+		"/Users/Thomas/Desktop/Test/Test/hallo.cpp"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 41.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 381.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Funktionsanzeige.sublime-project",
+	"replace":
+	{
+		"height": 78.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/YOLO.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/Funktionsanzeige/Funktionsanzeige.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

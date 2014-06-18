@@ -1,8 +1,10 @@
 
 #include "CalculateValues.h"
 #include "Renderer.h"
+
 #include <string>
-//Subklasse die beies zusammenfasst fehlt noch, also die von beiden erbt, von dieser Klasse werde ich wahrscheinlich auch das Übergen der Renderwerte Regeln lassen
+#include <memory>
+
 
 int main(int, char const**)
 {
@@ -10,11 +12,21 @@ int main(int, char const**)
     int counter = 200;
     float deltax = 0.1;
     
-    CalculateValues fx1;
-    fx1.setcalculateValues(x, deltax, counter);
-    fx1.getcalculateValues();
+//    CalculateValues *fx1 = nullptr;    NIE WIEDER VERWENDEN ICH BENUTZE JETZT NURNOCH DIE SMARTEN GESHAREDEN POINTER
+//    fx1 = new CalculateValues;
+//    delete fx1;
+//    fx1 = nullptr;
+
+    
+    //Eine neue Funktion erstellen, Werte zuweisen und berechen.
+    std::shared_ptr<CalculateValues> fx1(new CalculateValues);
+    fx1->setcalculateValues(x, deltax, counter);
+    fx1->getcalculateValues();
+    
+    
+    
     Renderer Window;
-    Window.Render(fx1);
+    Window.Render(*fx1);
     std::cin.get();
     return 0;
 }

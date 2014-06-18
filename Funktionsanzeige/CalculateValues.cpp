@@ -10,6 +10,11 @@ CalculateValues::CalculateValues()
 
 
 
+
+CalculateValues::~CalculateValues(){std::cout << "DESTRUKTOR" << std::endl;}
+
+
+
 void CalculateValues::setcalculateValues(double x, float deltax,int counter)
 {
     m_counter = counter;
