@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E93418731952249B00EE5286 /* SFML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E934186D1952249A00EE5286 /* SFML.framework */; };
+		E93418741952249B00EE5286 /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E934186E1952249B00EE5286 /* sfml-window.framework */; };
+		E93418751952249B00EE5286 /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E934186F1952249B00EE5286 /* sfml-system.framework */; };
+		E93418761952249B00EE5286 /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93418701952249B00EE5286 /* sfml-network.framework */; };
+		E93418771952249B00EE5286 /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93418711952249B00EE5286 /* sfml-graphics.framework */; };
+		E93418781952249B00EE5286 /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93418721952249B00EE5286 /* sfml-audio.framework */; };
 		E9DDDCF9194DD3DF00DC4522 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDCF8194DD3DF00DC4522 /* main.cpp */; };
 		E9DDDD00194DD3DF00DC4522 /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9DDDCFF194DD3DF00DC4522 /* sansation.ttf */; };
 		E9DDDD30194E141B00DC4522 /* CalculateValues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9DDDD2E194E141B00DC4522 /* CalculateValues.cpp */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E934186D1952249A00EE5286 /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/SFML.framework"; sourceTree = "<group>"; };
+		E934186E1952249B00EE5286 /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		E934186F1952249B00EE5286 /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		E93418701952249B00EE5286 /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		E93418711952249B00EE5286 /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		E93418721952249B00EE5286 /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "../../Documents/SFML-2.1-osx-clang-universal/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
 		E9DDDCF0194DD3DF00DC4522 /* Funktionsanzeige.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funktionsanzeige.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DDDCF4194DD3DF00DC4522 /* Funktionsanzeige-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Funktionsanzeige-Info.plist"; sourceTree = "<group>"; };
 		E9DDDCF8194DD3DF00DC4522 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -29,6 +41,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E93418731952249B00EE5286 /* SFML.framework in Frameworks */,
+				E93418741952249B00EE5286 /* sfml-window.framework in Frameworks */,
+				E93418751952249B00EE5286 /* sfml-system.framework in Frameworks */,
+				E93418761952249B00EE5286 /* sfml-network.framework in Frameworks */,
+				E93418771952249B00EE5286 /* sfml-graphics.framework in Frameworks */,
+				E93418781952249B00EE5286 /* sfml-audio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,12 @@
 		E9DDDCE6194DD3DF00DC4522 = {
 			isa = PBXGroup;
 			children = (
+				E934186D1952249A00EE5286 /* SFML.framework */,
+				E934186E1952249B00EE5286 /* sfml-window.framework */,
+				E934186F1952249B00EE5286 /* sfml-system.framework */,
+				E93418701952249B00EE5286 /* sfml-network.framework */,
+				E93418711952249B00EE5286 /* sfml-graphics.framework */,
+				E93418721952249B00EE5286 /* sfml-audio.framework */,
 				E9DDDCF2194DD3DF00DC4522 /* Funktionsanzeige */,
 				E9DDDCF1194DD3DF00DC4522 /* Products */,
 			);
@@ -293,6 +317,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Thomas/Downloads/SFML-2.1-osx-clang-universal/Frameworks",
+					"/Users/Thomas/Documents/SFML-2.1-osx-clang-universal/Frameworks",
 				);
 				INFOPLIST_FILE = "Funktionsanzeige/Funktionsanzeige-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +331,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Thomas/Downloads/SFML-2.1-osx-clang-universal/Frameworks",
+					"/Users/Thomas/Documents/SFML-2.1-osx-clang-universal/Frameworks",
 				);
 				INFOPLIST_FILE = "Funktionsanzeige/Funktionsanzeige-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

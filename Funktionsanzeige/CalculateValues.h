@@ -1,11 +1,3 @@
-//
-//  CalculateValues.h
-//  Funktionsanzeige
-//
-//  Created by Thomas Dost on 15.06.14.
-//  Copyright (c) 2014 Thomas Dost. All rights reserved.
-//
-
 #ifndef __Funktionsanzeige__CalculateValues__
 #define __Funktionsanzeige__CalculateValues__
 
@@ -21,6 +13,10 @@ public:
     //--------Functions------
     void setcalculateValues(double x, float deltax, int counter);
     void getcalculateValues();
+    std::vector<double> givex();
+    std::vector<double> givefx();
+    int givecounter();
+    double givedeltax();
     CalculateValues();
     ~CalculateValues();
     //--------Variables------
@@ -52,12 +48,13 @@ private:
     
 };
 
-class Renderer : public CalculateValues
+class Renderer : protected CalculateValues
 {
     
     
 public:
-     void Render(CalculateValues &fx);
+    void setRenderValues(CalculateValues &fx);
+    void Render();
     
 protected:
     

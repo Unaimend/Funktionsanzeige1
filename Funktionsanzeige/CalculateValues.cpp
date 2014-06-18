@@ -1,5 +1,5 @@
 #include "CalculateValues.h"
-#include "iostream"
+#include <iostream>
 CalculateValues::CalculateValues()
 {
     m_x = 0;
@@ -10,8 +10,8 @@ CalculateValues::CalculateValues()
 
 
 
-
 CalculateValues::~CalculateValues(){std::cout << "DESTRUKTOR" << std::endl;}
+
 
 
 
@@ -76,6 +76,25 @@ void CalculateValues::calculateFx()
        
         
     }
-    //Wird friend oder mit getter für die RenderValues-Klasse, die dann die Werte in SFML rendert.
-    //Die Rendederfunktion || Rendergetterfunktion(wahrscheinlich eher ne getter wegen kapselung) wird dann in dieser Funktion jedes mal nach dem Berechen aufgerufen.
+       //Die Rendederfunktion || Rendergetterfunktion(wahrscheinlich eher ne getter wegen kapselung) wird dann in dieser Funktion jedes mal nach dem Berechen aufgerufen.
 }
+
+
+
+
+std::vector<double> CalculateValues::givex(){ return xvalues; }
+
+
+
+
+std::vector<double> CalculateValues::givefx(){ return fxvalues; }
+
+
+
+
+int CalculateValues::givecounter(){ return m_counter; }
+
+
+
+
+double CalculateValues::givedeltax(){ return m_deltax; }
