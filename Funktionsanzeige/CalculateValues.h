@@ -17,6 +17,8 @@ public:
     void getcalculateValues();
     std::vector<double> givex();
     std::vector<double> givefx();
+    std::vector<double> givefirstderivationx();
+    std::vector<double> givefirstderivationfx();
     int givecounter();
     double givedeltax();
     CalculateValues();
@@ -33,6 +35,7 @@ protected:
     float m_deltax;
     int m_counter;
     int  m_funktionswahl;
+    int m_xorginal;
     std::vector<double> xvalues;
     std::vector<double> fxvalues;
     
@@ -66,7 +69,8 @@ private:
     unsigned int m_heigth;
     //--------Variables------
     void renderaxis(sf::RenderWindow &window);
-    void renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window);
+    void renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window, std::vector<double> &firstderivationlocalcopyx, std::vector<double> &firstderivationlocalcopyfx, std::vector<double>::iterator &it3, std::vector<double>::iterator &it4, sf::CircleShape &firstderivationvalue);
+    void renderfirstderivation(std::vector<double> &firstderivationlocalcopyx, std::vector<double> &firstderivationlocalcopyfx, std::vector<double>::iterator &it3,  std::vector<double>::iterator &it4, sf::CircleShape &firstderivationvalue, sf::RenderWindow &window);
     
 };
 

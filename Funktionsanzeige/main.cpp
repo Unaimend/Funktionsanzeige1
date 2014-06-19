@@ -24,8 +24,8 @@ int main(int, char const**)
     int counter = 200;
     float deltax = 0.1;
     int wahl = 0; //Wahl = 0 bedeutet x*x, wahl = 1 bedeutet x*x*x, wahl = 2 ist ne fuktion die man selber i ncode einstellen darf
-    double x2 = -10;
-    int counter2 = 200;
+    double x2 = -100;
+    int counter2 = 2000;
     float deltax2 = 0.1;
 
     
@@ -37,17 +37,21 @@ int main(int, char const**)
     Renderer window;
     window.setRenderValues(*fx1);
     window.Render();
-    wahl = 1;
-
     
-    //Zweite Funktion zurzeit noch in eine msperaten Fenster
+    
+    
+    wahl = 2;
     std::shared_ptr<CalculateValues> fx2(new CalculateValues);
     fx2->setcalculateValues(x2, deltax2, counter2, wahl);
     fx2->getcalculateValues();
+    window.setRenderValues(*fx2);
+    window.Render();
+//
     
-    Renderer window2;
-    window2.setRenderValues(*fx2);
-    window2.Render();
+    
+    
+
+    
 
    
     
