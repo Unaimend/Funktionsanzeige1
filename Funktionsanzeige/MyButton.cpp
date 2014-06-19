@@ -94,6 +94,7 @@ const bool MyButton::isClicked(float &xpos, float &ypos, int &buttonwidth, int &
 //            std::cout << "CLICK" << std::endl;
 //            std::cout << MouseX << "  " << MouseY << std::endl;
 //        }
+        
     }
     
     

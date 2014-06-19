@@ -128,6 +128,7 @@ std::vector<double> CalculateValues::givefx(){ return fxvalues; }
 
 
 
+
 int CalculateValues::givecounter(){ return m_counter; }
 
 
