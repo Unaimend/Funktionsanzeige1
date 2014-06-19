@@ -1,5 +1,7 @@
 #include "CalculateValues.h"
+
 #include <iostream>
+#include <math.h>
 CalculateValues::CalculateValues()
 {
     m_x = 0;
@@ -101,7 +103,7 @@ void CalculateValues::calculateFx()
         for(int interncounter = 0; interncounter <= m_counter ; interncounter++)
         {   xvalues.push_back(m_x);
             
-            fx = m_x * m_x * m_x;
+            fx = sin(m_x);
             fxvalues.push_back(fx);
             
             std::cout << "Durchgang: "<< interncounter << " x: "<< m_x <<" f(x): " << fx << std::endl;

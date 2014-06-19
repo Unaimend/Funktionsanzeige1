@@ -1,12 +1,13 @@
 #include <string>
 #include <memory>
 #include <vector>
+#include <thread>
 
 #include "SFML/Graphics.hpp"
 #include "CalculateValues.h"
 #include "Renderer.h"
 
-
+void yolo( );
 
 int main(int, char const**)
 {
@@ -39,7 +40,7 @@ int main(int, char const**)
     Renderer window2;
     window.setRenderValues(*fx2);
     window.Render();
-   
+
    
     
     
@@ -53,6 +54,9 @@ int main(int, char const**)
 //    fx1 = new CalculateValues;
 //    delete fx1;
 //    fx1 = nullptr;
+
+
+
 
 
 

@@ -49,7 +49,7 @@ void Renderer::Render()
     
     
     //Koordinaten werden mit diesem Punkt dargestellt
-    sf::CircleShape values(3);
+    sf::CircleShape values(2);
     values.setFillColor(sf::Color(0,0,153));
    
     
