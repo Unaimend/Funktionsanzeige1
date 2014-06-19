@@ -11,20 +11,35 @@
 int main(int, char const**)
 {
    
-    double x = 0;
+    double x = -10;
     int counter = 200;
     float deltax = 0.1;
-    
+    int wahl = 0; //Wahl = 0 bedeutet x*x, wahl = 1 bedeutet x*x*x, wahl = 2 ist ne fuktion die man selber i ncode einstellen darf
+    double x2 = -10;
+    int counter2 = 200;
+    float deltax2 = 0.1;
 
     
     //Eine neue Funktion erstellen, Werte zuweisen und berechen.
     std::shared_ptr<CalculateValues> fx1(new CalculateValues);
-    fx1->setcalculateValues(x, deltax, counter);
+    fx1->setcalculateValues(x, deltax, counter, wahl);
     fx1->getcalculateValues();
-
+    
     Renderer window;
     window.setRenderValues(*fx1);
     window.Render();
+    wahl = 1;
+
+    
+    //Zweite Funktion zurzeit noch in eine msperaten Fenster
+    std::shared_ptr<CalculateValues> fx2(new CalculateValues);
+    fx2->setcalculateValues(x2, deltax2, counter2, wahl);
+    fx2->getcalculateValues();
+    
+    Renderer window2;
+    window.setRenderValues(*fx2);
+    window.Render();
+   
    
     
     

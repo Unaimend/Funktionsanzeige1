@@ -23,18 +23,36 @@ void Renderer::setRenderValues(CalculateValues &fx)
 
 
 void Renderer::Render()
-{   // Wundschgröße
+{
+    // Wundschgröße
     unsigned  int setWidth = 2560;
     unsigned  int setHeigth = 1600;
+    
+   
     //Erstellt das Fenster
-    sf::RenderWindow window(sf::VideoMode(setWidth, setHeigth), "SFML window");
+    sf::RenderWindow window(sf::VideoMode(setWidth, setHeigth), "Funktionsanzeige digga :)");
+    window.setFramerateLimit(30);
     sf::Vector2u size = window.getSize();
     
+   
     //aktuelle Auflösung
      m_width = size.x; // damit Rechen da dies die aktuelle dynamische Auflösung darstellt
      m_heigth = size.y; //Wichtig damit die x-und y-Were nach her von der Mitte ausgehen.
-
+    
+    
+    //Erzeuge lokale Kopien der Werte-Vektoren.
+    std::vector<double> localcopyx = this->xvalues;
+    std::vector<double> localcopyfx = this->fxvalues;
+    //Iteratoren für die KoordinatenVekotren.
+    std::vector<double>::iterator it;
+    std::vector<double>::iterator it2;
+    
+    
+    //Koordinaten werden mit diesem Punkt dargestellt
+    sf::CircleShape values(3);
+    values.setFillColor(sf::Color(0,0,153));
    
+    
     //Koordinatensystem anzeigen
     while (window.isOpen())
     {
@@ -57,6 +75,7 @@ void Renderer::Render()
         // Clear screen
        window.clear(sf::Color(255,255,255,255));
        //Koordinatensystem anzeigen
+       Renderer::renderfunction(localcopyx, localcopyfx, it, it2, values, window);
        Renderer::renderaxis(window);
 
         // Update the window
@@ -89,7 +108,23 @@ void Renderer::renderaxis(sf::RenderWindow &window)
 
 
 
+void Renderer::renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window)
+{   it2 = localcopyfx.begin();
+    for (it = localcopyx.begin(); it < localcopyx.end(); it++)
+    {
+        //std::cout << (*it) << std::endl;
+        // (xwerte\ywerte)
+        values.setPosition(10*(*it)+m_width/2, -1*(10*(*it2))+m_heigth/2);
+        it2++;
+        window.draw(values);
+        
+        
+    }
+    *it = 0;
+    *it2 =0;
+    
 
+}
 
 
 

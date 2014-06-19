@@ -15,11 +15,12 @@ CalculateValues::~CalculateValues(){std::cout << "DESTRUKTOR" << std::endl;}
 
 
 
-void CalculateValues::setcalculateValues(double x, float deltax,int counter)
+void CalculateValues::setcalculateValues(double x, float deltax,int counter, int funktionswahl)
 {
     m_counter = counter;
     m_deltax = deltax;
     m_x = x;
+    m_funktionswahl = funktionswahl;
 }
 
 
@@ -63,17 +64,50 @@ void CalculateValues::calculateFirstDerivative()
 
 void CalculateValues::calculateFx()
 {
-    double fx = 0;
-    for(int interncounter = 0; interncounter <= m_counter ; interncounter++)
-    {   xvalues.push_back(m_x);
-        
-        fx = m_x * m_x * m_x;
-        fxvalues.push_back(fx);
-       
-        std::cout << "Durchgang: "<< interncounter << " x: "<< m_x <<" f(x): " << fx << std::endl;
-        
-        m_x = m_x + m_deltax;
-       
+    
+    if(m_funktionswahl == 0)
+    {
+        double fx = 0;
+        for(int interncounter = 0; interncounter <= m_counter ; interncounter++)
+        {   xvalues.push_back(m_x);
+            
+            fx = m_x * m_x;
+            fxvalues.push_back(fx);
+            
+            std::cout << "Durchgang: "<< interncounter << " x: "<< m_x <<" f(x): " << fx << std::endl;
+            
+            m_x = m_x + m_deltax;
+        }
+    }
+    else if (m_funktionswahl == 1)
+    {
+        double fx = 0;
+        for(int interncounter = 0; interncounter <= m_counter ; interncounter++)
+        {   xvalues.push_back(m_x);
+            
+            fx = m_x * m_x * m_x;
+            fxvalues.push_back(fx);
+            
+            std::cout << "Durchgang: "<< interncounter << " x: "<< m_x <<" f(x): " << fx << std::endl;
+            
+            m_x = m_x + m_deltax;
+        }
+
+    }
+    
+    else if (m_funktionswahl == 3)
+    {
+        double fx = 0;
+        for(int interncounter = 0; interncounter <= m_counter ; interncounter++)
+        {   xvalues.push_back(m_x);
+            
+            fx = m_x * m_x * m_x;
+            fxvalues.push_back(fx);
+            
+            std::cout << "Durchgang: "<< interncounter << " x: "<< m_x <<" f(x): " << fx << std::endl;
+            
+            m_x = m_x + m_deltax;
+        }
         
     }
        //Die Rendederfunktion || Rendergetterfunktion(wahrscheinlich eher ne getter wegen kapselung) wird dann in dieser Funktion jedes mal nach dem Berechen aufgerufen.

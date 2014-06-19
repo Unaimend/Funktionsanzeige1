@@ -12,7 +12,7 @@ class CalculateValues
     
 public:
     //--------Functions------
-    void setcalculateValues(double x, float deltax, int counter);
+    void setcalculateValues(double x, float deltax, int counter, int funktionswahl = 0);
     void getcalculateValues();
     std::vector<double> givex();
     std::vector<double> givefx();
@@ -31,7 +31,7 @@ protected:
     double m_x;
     float m_deltax;
     int m_counter;
- 
+    int  m_funktionswahl;
     std::vector<double> xvalues;
     std::vector<double> fxvalues;
     
@@ -65,6 +65,7 @@ private:
     unsigned int m_heigth;
     //--------Variables------
     void renderaxis(sf::RenderWindow &window);
+    void renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window);
     
 };
 #endif /* defined(__Funktionsanzeige__CalculateValues__) */
