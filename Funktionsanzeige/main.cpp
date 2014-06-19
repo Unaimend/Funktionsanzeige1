@@ -44,18 +44,9 @@ int main(int, char const**)
     std::shared_ptr<CalculateValues> fx2(new CalculateValues);
     fx2->setcalculateValues(x2, deltax2, counter2, wahl);
     fx2->getcalculateValues();
+
     window.setRenderValues(*fx2);
     window.Render();
-//
-    
-    
-    
-
-    
-
-   
-    
-    
     return 0;
 }
 
