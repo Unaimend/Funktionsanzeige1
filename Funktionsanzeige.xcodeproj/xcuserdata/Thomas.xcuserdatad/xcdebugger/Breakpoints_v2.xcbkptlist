@@ -6,15 +6,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Funktionsanzeige/MyButton.cpp"
+            timestampString = "424882416.880514"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "MyButton::isClicked(float &amp;xpos, float &amp;ypos, int &amp;buttonwidth, int &amp;buttonheigth)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Funktionsanzeige/CalculateValues.cpp"
-            timestampString = "424866829.339847"
+            filePath = "Funktionsanzeige/Renderer.cpp"
+            timestampString = "424882165.960425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20">
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "Renderer::renderfunction(std::vector&lt;double&gt; &amp;localcopyx, std::vector&lt;double&gt; &amp;localcopyfx, std::vector&lt;double&gt;::iterator &amp;it, std::vector&lt;double&gt;::iterator &amp;it2, sf::CircleShape &amp;values, sf::RenderWindow &amp;window)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

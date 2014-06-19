@@ -25,19 +25,19 @@ void Renderer::setRenderValues(CalculateValues &fx)
 void Renderer::Render()
 {
     // Wundschgröße
-    unsigned  int setWidth = 2560;
-    unsigned  int setHeigth = 1600;
+    unsigned  int setWidth = 1680;
+    unsigned  int setHeigth = 1602;
     
    
     //Erstellt das Fenster
     sf::RenderWindow window(sf::VideoMode(setWidth, setHeigth), "Funktionsanzeige digga :)");
     window.setFramerateLimit(30);
     sf::Vector2u size = window.getSize();
-    
+    std::cout << size.x << size.y;
    
     //aktuelle Auflösung
-     m_width = size.x; // damit Rechen da dies die aktuelle dynamische Auflösung darstellt
-     m_heigth = size.y; //Wichtig damit die x-und y-Were nach her von der Mitte ausgehen.
+    m_width = size.x; // damit Rechen da dies die aktuelle dynamische Auflösung darstellt
+    m_heigth = size.y; //Wichtig damit die x-und y-Were nach her von der Mitte ausgehen.
     
     
     //Erzeuge lokale Kopien der Werte-Vektoren.
@@ -51,7 +51,7 @@ void Renderer::Render()
     //Koordinaten werden mit diesem Punkt dargestellt
     sf::CircleShape values(2);
     values.setFillColor(sf::Color(0,0,153));
-   
+    
     
     //Koordinatensystem anzeigen
     while (window.isOpen())
@@ -75,9 +75,13 @@ void Renderer::Render()
         // Clear screen
        window.clear(sf::Color(255,255,255,255));
        //Koordinatensystem anzeigen
+       
        Renderer::renderfunction(localcopyx, localcopyfx, it, it2, values, window);
        Renderer::renderaxis(window);
-
+       MyButton::instantiateButton(10, m_heigth-225, "Stammfunktion", window, 150,55);
+       MyButton::instantiateButton(10, m_heigth-150, "1. Ableitung", window, 150,55);
+       MyButton::instantiateButton(10, m_heigth-75, "2. Ableitung", window, 150,55);
+      
         // Update the window
         window.display();
     }
@@ -110,15 +114,20 @@ void Renderer::renderaxis(sf::RenderWindow &window)
 
 void Renderer::renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window)
 {   it2 = localcopyfx.begin();
-    for (it = localcopyx.begin(); it < localcopyx.end(); it++)
+    if (m_stammanzeigen == true)
     {
-        //std::cout << (*it) << std::endl;
-        // (xwerte\ywerte)
-        values.setPosition(10*(*it)+m_width/2, -1*(10*(*it2))+m_heigth/2);
-        it2++;
-        window.draw(values);
-        
-        
+        for (it = localcopyx.begin(); it < localcopyx.end(); it++)
+        {
+            //std::cout << (*it) << std::endl;
+            // (xwerte\ywerte)
+            values.setPosition(10*(*it)+m_width/2, -1*(10*(*it2))+m_heigth/2);
+            it2++;
+            window.draw(values);
+        }
+    }
+    else
+    {
+        window.clear(sf::Color(255,255,255,255));
     }
     *it = 0;
     *it2 =0;

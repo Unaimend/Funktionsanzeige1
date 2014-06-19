@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include <vector>
-
+class Button;
+#include "MyButton.h"
 #include "Renderer.h"
 #include "SFML/Graphics.hpp"
 
@@ -49,7 +50,7 @@ private:
     
 };
 
-class Renderer : protected CalculateValues
+class Renderer : protected CalculateValues, public MyButton
 {
     
     
@@ -68,4 +69,7 @@ private:
     void renderfunction(std::vector<double> &localcopyx, std::vector<double> &localcopyfx, std::vector<double>::iterator &it, std::vector<double>::iterator &it2, sf::CircleShape &values, sf::RenderWindow &window);
     
 };
+
+
+
 #endif /* defined(__Funktionsanzeige__CalculateValues__) */

@@ -6,12 +6,20 @@
 #include "SFML/Graphics.hpp"
 #include "CalculateValues.h"
 #include "Renderer.h"
-
+/**********************************************
+*     Developed by: Thomas Dost               *
+*     Version: 1.1.0                          *
+*                                             *
+*                                             *
+*                                             *
+*                                             *
+*                                             *
+***********************************************/
 void yolo( );
 
 int main(int, char const**)
 {
-   
+    
     double x = -10;
     int counter = 200;
     float deltax = 0.1;
@@ -38,8 +46,8 @@ int main(int, char const**)
     fx2->getcalculateValues();
     
     Renderer window2;
-    window.setRenderValues(*fx2);
-    window.Render();
+    window2.setRenderValues(*fx2);
+    window2.Render();
 
    
     
