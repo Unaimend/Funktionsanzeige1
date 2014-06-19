@@ -6,8 +6,8 @@
 #include "Renderer.h"
 
 
-
 //dynamische speicherzuweisung mit button undso und benno anti vektor lösung damit ich mehrer funktionen gleichzeitig anzeigen lassen kann
+//Die Lösung um im nachh hinein noch einen hinzuzufügen :) yay noch mehr Funktionen
 
 void Renderer::setRenderValues(CalculateValues &fx)
 {
@@ -19,18 +19,23 @@ void Renderer::setRenderValues(CalculateValues &fx)
     this->m_deltax = fx.givedeltax();
 }
 
+
+
+
 void Renderer::Render()
 {   // Wundschgröße
-    unsigned int setWidth = 2560;
-    unsigned int setHeigth = 1600;
+    unsigned  int setWidth = 2560;
+    unsigned  int setHeigth = 1600;
     //Erstellt das Fenster
     sf::RenderWindow window(sf::VideoMode(setWidth, setHeigth), "SFML window");
     sf::Vector2u size = window.getSize();
     
     //aktuelle Auflösung
-    unsigned const int width = size.x; // damit Rechen da dies die aktuelle dynamische Auflösung darstellt
-    unsigned const int heigth = size.y;
-    
+     m_width = size.x; // damit Rechen da dies die aktuelle dynamische Auflösung darstellt
+     m_heigth = size.y; //Wichtig damit die x-und y-Were nach her von der Mitte ausgehen.
+
+   
+    //Koordinatensystem anzeigen
     while (window.isOpen())
     {
         // Process events
@@ -47,20 +52,39 @@ void Renderer::Render()
                 window.close();
             }
         }
-        
+       
+
         // Clear screen
-        window.clear();
+       window.clear(sf::Color(255,255,255,255));
+       //Koordinatensystem anzeigen
+       Renderer::renderaxis(window);
+
         // Update the window
         window.display();
     }
- 
+ }
+
+
+
+
+void Renderer::renderaxis(sf::RenderWindow &window)
+{
+    //Erstellt die vertikale(Y-) Achse) an.
+    sf::RectangleShape Vertikal;
+    Vertikal.setSize(sf::Vector2f(m_width,2));
+    Vertikal.setPosition(0, m_heigth/2);
+    Vertikal.setFillColor(sf::Color(0,0,0,255));
+    
+    //Erstellt die horizontale(X-) Achse) an.
+    sf::RectangleShape Horizontal;
+    Horizontal.setSize(sf::Vector2f(2,m_heigth));
+    Horizontal.setPosition(m_width/2+2, 0);
+    Horizontal.setFillColor(sf::Color(0,0,0,255));
+    
+    //Zeichnet die beiden Achsen.
+    window.draw(Vertikal);
+    window.draw(Horizontal);
 }
-
-
-
-
-
-
 
 
 

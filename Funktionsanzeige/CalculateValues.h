@@ -5,6 +5,7 @@
 #include <vector>
 
 #include "Renderer.h"
+#include "SFML/Graphics.hpp"
 
 class CalculateValues 
 {
@@ -59,8 +60,11 @@ public:
 protected:
     
 private:
-    
-    
+    //--------Functions------
+    unsigned int m_width;
+    unsigned int m_heigth;
+    //--------Variables------
+    void renderaxis(sf::RenderWindow &window);
     
 };
 #endif /* defined(__Funktionsanzeige__CalculateValues__) */
