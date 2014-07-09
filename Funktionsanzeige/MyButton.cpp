@@ -22,7 +22,7 @@ void MyButton::instantiateButton(float xpos, float ypos, std::string text, sf::R
     //Text des Button
     sf::Text MyText;
     sf::Font MyFont;
-    MyFont.loadFromFile("/Users/Thomas/Desktop/Funktionsanzeige/Funktionsanzeige/sansation.ttf");
+    MyFont.loadFromFile("/Users/Thomas/Desktop/Fertige Projekte/Funktionsanzeige/Funktionsanzeige/sansation.ttf");
     MyText.setFont(MyFont);
     MyText.setCharacterSize(20);
     MyText.setPosition(xpos, ypos);

@@ -15,7 +15,7 @@
 *                                             *
 *                                             *
 ***********************************************/
-void yolo( );
+
 
 int main(int, char const**)
 {
@@ -44,9 +44,10 @@ int main(int, char const**)
     std::shared_ptr<CalculateValues> fx2(new CalculateValues);
     fx2->setcalculateValues(x2, deltax2, counter2, wahl);
     fx2->getcalculateValues();
-
-    window.setRenderValues(*fx2);
-    window.Render();
+    
+    Renderer window2;
+    window2.setRenderValues(*fx2);
+    window2.Render();
     return 0;
 }
 
